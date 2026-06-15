@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Jason Domingo | Virtual Assistant Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+background: linear-gradient(135deg, #eff6ff, #dbeafe);
+color:#333;
+overflow-x:hidden;
+}
+
+
+
+.page{
+display:none;
+min-height:100vh;
+padding:30px;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+overflow-y:auto;
+}
+
+
+.active{
+    display:flex;
+}
+
+h1{
+font-size:3.5rem;
+margin-bottom:10px;
+color:#1e3a8a;
+}
+
+h3{
+color:#2563eb;
+margin-bottom:10px;
+}
+
+img{
+transition:.3s;
+}
+
+img:hover{
+transform:scale(1.03);
+}
+
+
+h2{
+    font-size:2rem;
+    margin-bottom:20px;
+    color:#2563eb;
+}
+
+p{
+    max-width:800px;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.card{
+background: rgba(255,255,255,0.95);
+backdrop-filter: blur(10px);
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.12);
+max-width:900px;
+width:100%;
+border:1px solid rgba(255,255,255,.4);
+}
+
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin-top:20px;
+}
+
+.skill{
+background:linear-gradient(135deg,#2563eb,#60a5fa);
+color:white;
+padding:10px 18px;
+border-radius:30px;
+font-size:14px;
+font-weight:600;
+}
+
+
+.buttons{
+    margin-top:30px;
+}
+
+button{
+padding:12px 28px;
+border:none;
+border-radius:30px;
+background:linear-gradient(135deg,#2563eb,#3b82f6);
+color:white;
+cursor:pointer;
+margin:5px;
+font-size:16px;
+transition:.3s;
+}
+
+button:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(37,99,235,.3);
+}
+
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.contact-info{
+    line-height:2;
+    font-size:18px;
+}
+
+a{
+    color:#2563eb;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- COVER PAGE -->
+<section class="page active">
+    <h1>John Jason C. Domingo</h1>
+    <h2>Virtual Assistant Portfolio</h2>
+    <p>
+        Administrative Support • Data Entry • Customer Service • Technical Support
+    </p>
+
+    <div class="buttons">
+        <button onclick="nextPage()">View Portfolio →</button>
+    </div>
+</section>
+
+<!-- ABOUT ME -->
+<section class="page">
+    <div class="card">
+        <h2>About Me</h2>
+
+        <p>
+            Hi! I'm John Jason Domingo, a Computer Engineer transitioning into
+            Virtual Assistant roles. I bring strong organizational skills,
+            technical knowledge, attention to detail, and excellent communication.
+            I am committed to helping businesses stay organized and operate efficiently.
+        </p>
+
+        <div class="buttons">
+            <button onclick="prevPage()">← Back</button>
+            <button onclick="nextPage()">Next →</button>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="page">
+    <div class="card">
+        <h2>Core Skills</h2>
+
+        <div class="skills">
+            <div class="skill">Image Annotator/Detection</div>
+            <div class="skill">Email Management</div>
+            <div class="skill">Calendar Management</div>
+            <div class="skill">Data Entry</div>
+            <div class="skill">Customer Service</div>
+            <div class="skill">Google Workspace</div>
+            <div class="skill">Microsoft Office</div>
+            <div class="skill">Basic IT Support</div>
+            <div class="skill">Documentation</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+
+        <div class="buttons">
+            <button onclick="prevPage()">← Back</button>
+            <button onclick="nextPage()">Next →</button>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="page">
+    <div class="card">
+        <h2>Experience</h2>
+
+        <h3>On-the-Job Training (OJT)</h3>
+
+        <p>
+            Enertech Systems Industries, Inc.
+        </p>
+
+        <p>
+            Assisted in administrative and technical tasks including document
+            organization, employee attendance verification, ERP data encoding,
+            report preparation, and workflow support for operations.
+        </p>
+
+        <div class="buttons">
+            <button onclick="prevPage()">← Back</button>
+            <button onclick="nextPage()">Next →</button>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="page">
+    <div class="card">
+        <h2>Projects</h2>
+
+        <div style="margin-bottom:40px;">
+            <h3>AI Uniform System (Capstone Project)</h3>
+
+            <p>
+                Developed an AI-powered Uniform Monitoring System as our
+                capstone project. The system helps guidance counselors
+                monitor student uniform violations, manage appeals,
+                track offenses, and generate reports through a web-based dashboard.
+            </p>
+
+            <img src="557616541_710705848696148_5400134595699004820_n.png"
+                alt="AI Uniform System"
+                style="width:100%;
+                max-width:500px;
+                height:auto;
+                display:block;
+                margin:20px auto;
+                border-radius:12px;
+                box-shadow:0 4px 15px rgba(0,0,0,.2);
+                "
+
+>
+ 
+        </div>
+
+        <div style="margin-bottom:30px;">
+            <h3>Workflow Automation Project</h3>
+            <p>
+                Developed templates and automated reporting processes to
+                improve organization and efficiency.
+            </p>
+        </div>
+
+        <div>
+            <h3>Data Management Support</h3>
+            <p>
+                Managed and organized company records and reports using ERP
+                systems and spreadsheet tools.
+            </p>
+        </div>
+
+        <div class="buttons">
+            <button onclick="prevPage()">← Back</button>
+            <button onclick="nextPage()">Next →</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="page">
+    <div class="card">
+        <h2>Contact Me</h2>
+
+        <div class="contact-info">
+            📧 Email: <a href="mailto:dmngson1@gmail.com">dmngson1@gmail.com</a><br>
+            📱 Phone: <a href="tel:+639296162636">+63 929 616 2636</a><br>
+            🔗 LinkedIn:
+            <a href="https://www.linkedin.com/in/john-jason-domingo-549149381/" target="_blank">
+                View Profile
+            </a>
+        </div>
+
+        <div class="buttons">
+            <button onclick="prevPage()">← Back</button>
+        </div>
+    </div>
+</section>
+
+<script>
+const pages = document.querySelectorAll('.page');
+let currentPage = 0;
+
+function showPage(index){
+    pages.forEach(page => page.classList.remove('active'));
+    pages[index].classList.add('active');
+}
+
+function nextPage(){
+    if(currentPage < pages.length - 1){
+        currentPage++;
+        showPage(currentPage);
+    }
+}
+
+function prevPage(){
+    if(currentPage > 0){
+        currentPage--;
+        showPage(currentPage);
+    }
+}
+</script>
+
+</body>
+</html>
+```
